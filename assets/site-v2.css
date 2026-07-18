@@ -47,7 +47,7 @@ button, input, textarea { font: inherit; }
 .hero-slide { display: none; position: absolute; inset: 0; margin: 0; }
 .hero-slide.is-active { display: block; }
 .hero-slide img { width: 100%; height: 100%; object-fit: contain; }
-.hero-prev, .hero-next { position: absolute; top: 50%; translate: 0 -50%; border: 0; background: rgb(0 0 0 / .3); color: #fff; padding: 1.25rem; cursor: pointer; }
+.hero-prev, .hero-next { position: absolute; top: 50%; translate: 0 -50%; width: 42px; height: 60px; border: 0; background: rgb(0 0 0 / .1); color: #fff; padding: 0; font-size: 30px; font-weight: 200; cursor: pointer; }
 .hero-prev { left: 0; }.hero-next { right: 0; }
 .cv-page, .about-page, .contact-page { padding: 0 var(--pad) 4rem; }
 .cv-page .page-title { padding-left: 0; padding-right: 0; }
@@ -226,7 +226,8 @@ button, input, textarea { font: inherit; }
 .site-daley.page-mortimer-sands-ishimoto .gallery-controls { display: block; }
 .site-daley .gallery-control {
   position: absolute; top: 50%; z-index: 3; translate: 0 -50%;
-  border: 0; background: rgb(0 0 0 / .35); color: #fff; padding: 1.25rem; cursor: pointer;
+  width: 42px; height: 60px; border: 0; background: rgb(0 0 0 / .1); color: #fff;
+  padding: 0; font-size: 30px; line-height: 1; font-weight: 200; cursor: pointer;
 }
 .site-daley .gallery-control-prev { left: 0; }
 .site-daley .gallery-control-next { right: 0; }
