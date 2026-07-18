@@ -44,3 +44,17 @@ document.querySelector('[data-preview-form]')?.addEventListener('submit', (event
   event.preventDefault();
   event.currentTarget.querySelector('.form-note').textContent = 'Form delivery will be connected before launch.';
 });
+
+document.querySelectorAll('.portfolio-page').forEach((section) => {
+  const grid = section.querySelector('.art-grid');
+  const previous = section.querySelector('.gallery-control-prev');
+  const next = section.querySelector('.gallery-control-next');
+  if (!grid || (!previous && !next)) return;
+
+  previous?.addEventListener('click', () => {
+    grid.scrollBy({ left: -Math.max(grid.clientWidth * .8, 500), behavior: 'smooth' });
+  });
+  next?.addEventListener('click', () => {
+    grid.scrollBy({ left: Math.max(grid.clientWidth * .8, 500), behavior: 'smooth' });
+  });
+});
