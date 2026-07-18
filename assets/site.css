@@ -29,7 +29,7 @@ button, input, textarea { font: inherit; }
 .site-footer { padding: 5rem var(--pad) 3rem; color: var(--muted); font-size: .9rem; }
 .page-title { padding: 5rem var(--pad) 3rem; }
 .page-title p, .eyebrow { margin: 0 0 .6rem; text-transform: uppercase; letter-spacing: .14em; font-size: .7rem; color: var(--muted); }
-.page-title h1, .contact-page h1 { margin: 0; font-weight: 400; font-size: clamp(2.6rem, 7vw, 7rem); line-height: .95; letter-spacing: -.035em; }
+.page-title h1, .contact-page h1 { margin: 0; font-weight: 400; font-size: clamp(2.15rem, 5vw, 5rem); line-height: 1; letter-spacing: -.025em; }
 .page-intro { max-width: 48rem; padding: 0 var(--pad) 4rem; font-size: 1rem; line-height: 1.7; }
 .art-grid { display: grid; grid-template-columns: repeat(12, 1fr); gap: clamp(1rem, 3vw, 3.5rem); padding: 0 var(--pad); align-items: start; }
 .gallery-item { grid-column: span 6; margin: 0 0 2.5rem; }
@@ -74,7 +74,7 @@ button, input, textarea { font: inherit; }
 
 /* Fine-art identity */
 .site-daley { font-family: "Avenir Next", Avenir, "Helvetica Neue", Arial, sans-serif; }
-.site-daley .brand { font-size: clamp(1.65rem, 2.6vw, 2.25rem); font-weight: 700; letter-spacing: -.04em; }
+.site-daley .brand { font-size: clamp(1.65rem, 2.6vw, 2.25rem); font-weight: 500; letter-spacing: -.03em; }
 .site-daley .site-nav { font-size: .84rem; letter-spacing: .02em; }
 
 /* Illustration identity */
