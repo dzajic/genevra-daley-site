@@ -1,0 +1,16 @@
+{% extends "layouts/base.njk" %}
+{% block main %}
+<section class="portfolio-page gallery-{{ galleryLayout }}">
+  <div class="art-grid">
+    {% for image in images %}
+    <figure class="gallery-item {{ image.orientation }}">
+      <button class="artwork-button" type="button" data-full="{{ image.src }}" data-caption="{{ image.caption }}" aria-label="Enlarge {{ image.alt or title + ' artwork ' + loop.index }}">
+        <img src="{{ image.src }}" alt="{{ image.alt }}"{% if not loop.first %} loading="lazy"{% endif %} decoding="async">
+      </button>
+      {% if image.caption %}<figcaption>{{ image.caption }}</figcaption>{% endif %}
+    </figure>
+    {% endfor %}
+  </div>
+  {% if content | trim %}<div class="page-intro">{{ content | safe }}</div>{% endif %}
+</section>
+{% endblock %}

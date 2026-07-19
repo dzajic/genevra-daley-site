@@ -1,0 +1,15 @@
+{% extends "layouts/base.njk" %}
+{% block main %}
+<section class="contact-page">
+  <h1>{{ title }}</h1>
+  {{ content | safe }}
+  <form class="contact-form" data-preview-form>
+    <label>Name<input name="name" autocomplete="name" required></label>
+    <label>Email<input type="email" name="email" autocomplete="email" required></label>
+    <label>Subject<input name="subject"></label>
+    <label>Message<textarea name="message" rows="7" required></textarea></label>
+    <button type="submit">Send inquiry</button>
+    <p class="form-note" role="status"></p>
+  </form>
+</section>
+{% endblock %}

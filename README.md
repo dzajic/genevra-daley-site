@@ -1,14 +1,31 @@
 # Genevra Daley portfolio
 
-Static recreation of [genevradaley.com](https://genevradaley.com), prepared for GitHub Pages.
+Markdown-powered recreation of [genevradaley.com](https://genevradaley.com), prepared for GitHub Pages.
+
+## Editing the site
+
+The artwork and written content live in `src/pages/` as Markdown files. Each
+page has a short settings block followed by its editable content. Shared page
+structure is in `src/_includes/`, all styling is in `src/assets/site.css`, and
+carousel behavior is in `src/assets/site.js`.
 
 ## Preview locally
 
 ```sh
-python3 -m http.server 8000
+pnpm install
+pnpm dev
 ```
 
-Then open `http://localhost:8000`.
+Eleventy prints the local preview address. Changes to Markdown, templates, CSS,
+or JavaScript rebuild automatically.
+
+## Build and verify
+
+```sh
+pnpm validate
+```
+
+The generated static website is written to `_site/`.
 
 ## Before publishing
 

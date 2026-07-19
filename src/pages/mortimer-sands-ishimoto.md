@@ -1,0 +1,25 @@
+---
+title: "Mortimer, Sands, Ishimoto"
+layout: layouts/carousel.njk
+permalink: "/mortimer-sands-ishimoto/index.html"
+pageClass: "page-mortimer-sands-ishimoto"
+navKey: "mortimer-sands-ishimoto"
+galleryLayout: "strip"
+images:
+  - src: "/assets/images/mortimer-sands-2015-04-20-arthouse-film-0343-44f1a5a2da.jpg"
+    alt: "mortimer-sands-2015-04-20-arthouse-film-0343.jpg"
+    caption: ""
+    orientation: "landscape"
+  - src: "/assets/images/mortimer-sands-2015-04-20-arthouse-film-0417-edb1c03907.jpg"
+    alt: "mortimer-sands-2015-04-20-arthouse-film-0417.jpg"
+    caption: ""
+    orientation: "landscape"
+  - src: "/assets/images/mortimer-sands-2015-04-20-arthouse-film-0384-862a1c36a5.jpg"
+    alt: "mortimer-sands-2015-04-20-arthouse-film-0384.jpg"
+    caption: ""
+    orientation: "landscape"
+  - src: "/assets/images/mortimer-sands-2015-04-20-arthouse-film-0025-6386954cad.jpg"
+    alt: "mortimer-sands-2015-04-20-arthouse-film-0025.jpg"
+    caption: ""
+    orientation: "landscape"
+---
